@@ -1,2 +1,25 @@
 # Class2020-SUTD-Digital-world-1D-Project
 Team member:
+Lu Jiankun
+Yannis Yuan Yongxi
+Jishna Bole
+Marooth Nath Chaowanasatier
+Neo Wei Lin
+
+
+## Hardware setup:
+Conect moisture sensor, adafruit DHT22 and water pump to the raspherry pi.
+
+## Details about sensors:
+https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/software-install-updated  DHT 22
+https://detail.tmall.com/item.htm?spm=a230r.1.14.6.5bbf24a8zOqyvb&id=41272850226&cm_id=140105335569ed55e27b&abbucket=14  Moisture Sensor
+
+## Build the machine learning model:
+A database is provided to build machine learning model. Run Machine_learning_model.py on the raspherry pi, it will save the model as model.pickle for machine learning and print the accuracy of the model. Usually, the accuracy should be very high (more than 0.98), if the accuracy is not satisfying enough, simply run a few more times and save the model with the best accuracy.
+Our product is not limited to any particular type of plant, as long as there is a database of the plant¡¯s water requirements, it will work for any and all plant species.
+
+## How to run:
+After finishing the previous steps, run planty_model.py, and the device will automatically water the plants
+
+## GUI:
+You can run the kivy GUI program on any device (not necessarily the raspherry pi, you can run it on mobile phone, laptop etc.)
