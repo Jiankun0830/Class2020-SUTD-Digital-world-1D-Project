@@ -1,4 +1,5 @@
-# Class2020-SUTD-Digital-world-1D-Project
+# SUTD-Planty
+CC05Group08
 Team member:
 Lu Jiankun
 Yannis Yuan Yongxi
@@ -22,4 +23,4 @@ Our product is not limited to any particular type of plant, as long as there is 
 After finishing the previous steps, run planty_model.py, and the device will automatically water the plants
 
 ## GUI:
-You can run the kivy GUI program on any device (not necessarily the raspherry pi, you can run it on mobile phone, laptop etc.)
+This GUI consists of three screens: Home, Graph and Info. The interface looks simple and clear and all the real-time data is processed in the program that supports the GUI. The data and graph are auto-updated every 10 seconds so that users will get all the information about the plant as well as the predictions for the smart watering system easily.You can run the kivy GUI program on any device (not necessarily the raspherry pi, you can run it on mobile phone, laptop etc.)

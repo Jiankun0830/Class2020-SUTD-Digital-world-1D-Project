@@ -7,6 +7,10 @@ import random
 import json
 
 def get_metrics(actual_targets, predicted_targets, labels):
+    '''
+        a function that takes in two arrays representing actual targets and prediicted targets respectively and
+        returns a dictionary containing the confusion matrix, accuracy, sensitivity and false positive rate
+    '''
     c_matrix = confusion_matrix(actual_targets, predicted_targets, labels)
     total = float(sum(sum(c_matrix)))
     correct_predictions = float(c_matrix[0][0] + c_matrix[1][1])
@@ -47,7 +51,7 @@ def normalize_minmax(data):
 
 def knn_classifier_full(bunchobject, feature_list, size = 0.2, seed = random.randint(1,5000)):
     '''
-    find the best k and save a model that decide whether to water or not
+        find the best k and save a model that decide whether to water or not
     '''
     data = bunchobject['data'][:, feature_list]
     target = bunchobject['target']

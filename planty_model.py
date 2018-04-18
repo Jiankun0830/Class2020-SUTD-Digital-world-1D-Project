@@ -67,7 +67,7 @@ def water_pump(ser,command):
 
 if __name__ == '__main__':
     #    main program that applying machine learning to decide whether to water or not and send data to the firebase database
-
+    # change the port's name to the correct serial port, the port is used to send command to water pump and read from moisture sensor.
     ser = serial.Serial('/dev/ttyUSB0',38400,timeout=0.05)
     features = range(3)
     file = open('model.pickle', 'rb')
